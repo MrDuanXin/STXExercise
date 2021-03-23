@@ -128,7 +128,7 @@ public class Six_DuanXinYu_App {
         String password = scanner.next();
         if ("admin".equals(username)&&"admin".equals(password)){
             while (true) {
-                System.out.println("Please s elect: 1.vaccination_Injection\t2.show_appointment_user\t3.show_Injectioned_user\t0.log out");
+                System.out.println("Please select: 1.vaccination_Injection\t2.show_appointment_user\t3.show_Injectioned_user\t0.log out");
                 String select = scanner.next();
                 switch (select) {
                     case "1":
