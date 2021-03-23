@@ -23,7 +23,15 @@ public class Six_DuanXinYu_App {
             switch (select) {
                 case "1":
                     //user registration
-                    Six_DuanXinYu_User user = regUser();
+//                    Six_DuanXinYu_User user = regUser();
+                    Six_DuanXinYu_User user = new Six_DuanXinYu_User();
+                    user.setVaccine(new Six_DuanXinYu_Vaccine());
+                    System.out.println("Please enter username：");
+                    user.setUname(scanner.next());
+                    System.out.println("Please enter password：");
+                    user.setUpwd(scanner.next());
+                    System.out.println("Please enter phone：");
+                    user.setUphone(scanner.next());
                     userList.add(user);
                     break;
                 case "2":
@@ -92,7 +100,7 @@ public class Six_DuanXinYu_App {
      * user Operation
      */
     public static void userOperation(Six_DuanXinYu_User loginSuccessUser) throws ParseException {
-        System.out.println("请选择: 1.灭活疫苗预约\t2.腺病毒载体疫苗预约\t3.修改联系方式\t4.修改密码\t0.退出登录");
+        System.out.println("请选择: 1.Inactivated vaccine reservation\t2.Adenovirus vaccine reservation\t3.update phone\t4.update password\t0.log out");
         String select = scanner.next();
         switch (select) {
             case "1":
