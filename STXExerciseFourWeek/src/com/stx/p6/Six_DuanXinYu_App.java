@@ -95,7 +95,6 @@ public class Six_DuanXinYu_App {
         System.out.println("login failed");
         return false;
     }
-
     /**
      * user Operation
      */
